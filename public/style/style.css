@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: sans-serif;
+
+}
+
+header {
+    background: #0e0e1a;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+header ul li {
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+/* BANNER */
+
+.video-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARDS */
+
+.projects-section h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+
+/* Seção dos projetos */
+.projects-section {
+  background: #0e0e1a;
+  padding: 60px 40px;
+  min-height: 100vh;
+}
+
+/* Grade de cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+  transition: transform 0.3s ease;
+  max-width: 340px;
+  width: 100%;
+  height: 200px; /* altura fixa opcional */
+}
+
+.card:hover {
+  transform: scale(1.13);
+  cursor: pointer;
+}
+
+.card video,
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.4); /* escurece a imagem para o texto ter contraste */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
