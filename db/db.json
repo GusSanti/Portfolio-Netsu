@@ -3,17 +3,56 @@
         {
             "id": 1,
             "titulo": "Roblox Game",
-            "imagem": "https://s2-techtudo.glbimg.com/If63J_91Sjp9FqZL93166bqgTj8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/X/e/nZe2PpQIKu0DRE0Zpljw/roblox-capa.jpg"
+            "imagem": "https://i.pinimg.com/originals/37/07/a7/3707a7cd7d384511c213b2a12dc3f0a7.jpg",
+            "video": "https://streamable.com/2aa66s",
+            "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+            "detalhes": [
+                "Detalhe 1",
+                "Detalhe 2",
+                "Detalhe 3"
+            ],
+            "data": "2024-10-22",
+            "links": {
+                "projeto": "https://example.com",
+                "repositorio": "https://github.com/exemplo",
+                "linkedin": "https://linkedin.com/in/exemplo"
+            }
         },
         {
             "id": 2,
             "titulo": "Roblox Game",
-            "imagem": "https://s2-techtudo.glbimg.com/If63J_91Sjp9FqZL93166bqgTj8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/X/e/nZe2PpQIKu0DRE0Zpljw/roblox-capa.jpg"
+            "imagem": "https://i.pinimg.com/originals/37/07/a7/3707a7cd7d384511c213b2a12dc3f0a7.jpg",
+            "video": "public/assets/ssstwitter.com_1749820831877.mp4",
+            "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+            "detalhes": [
+                "Detalhe 1",
+                "Detalhe 2",
+                "Detalhe 3"
+            ],
+            "data": "2024-10-22",
+            "links": {
+                "projeto": "https://example.com",
+                "repositorio": "https://github.com/exemplo",
+                "linkedin": "https://linkedin.com/in/exemplo"
+            }
         },
         {
             "id": 3,
             "titulo": "Roblox Game",
-            "imagem": "https://s2-techtudo.glbimg.com/If63J_91Sjp9FqZL93166bqgTj8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/X/e/nZe2PpQIKu0DRE0Zpljw/roblox-capa.jpg"
+            "imagem": "https://i.pinimg.com/originals/37/07/a7/3707a7cd7d384511c213b2a12dc3f0a7.jpg",
+            "video": "https://s2-techtudo.glbimg.com/If63J_91Sjp9FqZL93166bqgTj8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/X/e/nZe2PpQIKu0DRE0Zpljw/roblox-capa.jpg",
+            "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+            "detalhes": [
+                "Detalhe 1",
+                "Detalhe 2",
+                "Detalhe 3"
+            ],
+            "data": "2024-10-22",
+            "links": {
+                "projeto": "https://example.com",
+                "repositorio": "https://github.com/exemplo",
+                "linkedin": "https://linkedin.com/in/exemplo"
+            }
         }
     ]
 }

@@ -13,7 +13,7 @@
         <section>
             <ul>
                 <li>Home</li>
-                <li>Portfólio</li>
+                <a href="#projects">Projetos</a>
                 <li>About Me</li>
                 <li>Contact</li>
             </ul>
@@ -30,11 +30,32 @@
                 <p>SCRIPTER & GAME DEVELOPER</p>
             </div>
         </div>
-        <section class="projects-section">
+        <section id="projects" class="projects-section">
             <h2>Projetos</h2>
             <div id="cards-container" class="cards-grid"></div>
         </section>
     </main>
+
+    <!-- MODAL -->
+    <div class="modal hidden" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-body">
+                <iframe id="modalVideo" frameborder="0" allowfullscreen></iframe>
+                <div class="modal-texto">
+                    <h2 id="modalTitulo"></h2>
+                    <p id="modalDescricao"></p>
+                    <ul id="modalDetalhes"></ul>
+                    <p class="data" id="modalData"></p>
+                    <div class="botoes-modal">
+                        <button id="btnProjeto">Acessar projeto</button>
+                        <button id="btnRepositorio">Acessar repositório</button>
+                        <button id="btnLinkedin">Ver post no LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script/script.js"></script>
 </body>
 
