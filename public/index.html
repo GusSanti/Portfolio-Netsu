@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Netsu</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
     <header>
-        <section>
+        <nav class="nav-bar">
             <ul>
-                <li>Home</li>
-                <a href="#projects">Projetos</a>
-                <li>About Me</li>
-                <li>Contact</li>
+                <li><a href="#banner" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link active">Projetos</a></li>
+                <li><a href="#aboutme" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
     <main>
         <div id="banner">
@@ -37,6 +39,7 @@
     </main>
 
     <!-- MODAL -->
+
     <div class="modal hidden" id="modal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
@@ -48,7 +51,7 @@
                     <ul id="modalDetalhes"></ul>
                     <p class="data" id="modalData"></p>
                     <div class="botoes-modal">
-                        <button id="btnProjeto">Acessar projeto</button>
+                        <button id="btnCodigo">Codigo</button>
                         <button id="btnRepositorio">Acessar repositório</button>
                         <button id="btnLinkedin">Ver post no LinkedIn</button>
                     </div>
@@ -56,6 +59,72 @@
             </div>
         </div>
     </div>
+
+    <!-- IMAGEM CENTRO -->
+
+    <div class="imgscroll-content">
+        <div class="imgscroll">
+
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+
+    <div id="aboutme" class="aboutme">
+        <div class="aboutme-content">
+            <div class="aboutme-img">
+                <img src="https://i.pinimg.com/736x/eb/e8/4a/ebe84a0561906204a262969525145c96.jpg" alt="Foto de perfil">
+            </div>
+            <div class="aboutme-text">
+                <h2>ABOUT ME</h2>
+                <p>
+                    Hi! I'm Hugo, a game programmer and designer from The Netherlands, and I've been making games since
+                    I was 7.
+                    I published my first app on the App Store and Google Play when I was 15, and I've just wrapped up
+                    development
+                    on Avatar: Frontiers of Pandora as Narrative Systems Programmer at Ubisoft (Massive Entertainment).
+                    I graduated
+                    cum laude from Breda University studying Creative Media and Game Technologies.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+        <h2>Contatos</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <a href="mailto:eduardinbalatensa@gmail.com" class="icon" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <h3>E-mail</h3>
+                <p>eduardinbalatensa@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <a href="https://x.com/netssu" class="icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <h3>Twitter</h3>
+                <p>@netssu</p>
+            </div>
+
+            <div class="contact-card">
+                <a href="https://discord.com/users/seuid" class="icon" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <h3>Discord</h3>
+                <p>SeuNome#0000</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Created by GusSanti  | All images, logos and names are used with permission
+    </footer>
+
     <script src="script/script.js"></script>
 </body>
 

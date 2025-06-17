@@ -1,89 +1,108 @@
+* {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: sans-serif;
-    background-color: #0e0e1a;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #0e0e1a;
 
 }
 
 header {
-    background: #0e0e1a;
-    padding: 10px;
-    width: 100%;
-    height: 30px;
+  background-color: #0d0c19;
+  padding: 10px 0;
+  font-family: 'Comic Neue', cursive; 
+  height: 60px;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
 }
 
-header ul li {
-    margin-right: 20px;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-
+.nav-bar li {
+  display: inline;
 }
-header ul a{
-  margin-right: 20px;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
 
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #a259ff;
+}
+
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a259ff;
 }
 
 /* BANNER */
 
 .video-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
 }
 
 .content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 20px;
-    letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 #banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CARDS */
 
 
-.projects-section h2{
+.projects-section h2 {
   color: white;
   text-align: center;
   margin-bottom: 60px;
@@ -113,7 +132,7 @@ header ul a{
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 70px;
+  gap: 90px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -126,7 +145,8 @@ header ul a{
   transition: transform 0.3s ease;
   max-width: 340px;
   width: 100%;
-  height: 200px; /* altura fixa opcional */
+  height: 200px;
+  /* altura fixa opcional */
 }
 
 .card:hover {
@@ -153,7 +173,8 @@ header ul a{
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  background: rgba(0, 0, 0, 0.4); /* escurece a imagem para o texto ter contraste */
+  background: rgba(0, 0, 0, 0.4);
+  /* escurece a imagem para o texto ter contraste */
 }
 
 .card-title {
@@ -167,6 +188,7 @@ header ul a{
     opacity: 0;
     transform: translateX(-100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -179,137 +201,284 @@ header ul a{
     opacity: 1;
     transform: translateX(0);
   }
+
   to {
     opacity: 0;
     transform: translateX(-100px);
   }
 }
 
+/* IMG SCROLL */
+.imgscroll-content {
+  width: 100%;
+  height: 500px;
+  /* Defina a altura desejada */
+  overflow: hidden;
+  /* Oculta o conteúdo que ultrapassa a altura */
+  position: relative;
+  /* Necessário para o posicionamento da imagem */
+}
+
+.imgscroll {
+  background-image: url('https://s2-techtudo.glbimg.com/KErJzrMqLSCT96jXUXjr3-l50Js=/0x0:695x391/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/8/o/lh7lziRfejARA0VecHkA/melhores-jogos-roblox-jogar-com-amigos-fighting-simulator.jpg');
+  background-size: cover;
+  /* Ou outro valor desejado */
+  background-attachment: fixed;
+  /* A imagem não rola */
+  background-position: center top;
+  /* Começa no topo */
+  width: 100%;
+  height: 200%;
+  /* Dobra a altura para permitir a revelação */
+  position: absolute;
+  /* Posiciona a imagem dentro do contêiner */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* Coloca a imagem atrás do conteúdo */
+}
+
+
+
+
+/* ABOUT ME */
+
+.aboutme {
+  background-color: #6a0dad;
+  /* Roxo */
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-top: 50px;
+}
+
+.aboutme-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.aboutme-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+
+}
+
+.aboutme-text {
+  max-width: 500px;
+}
+
+.aboutme-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.aboutme-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* CONTACT */
+.contact-section {
+  background-color: #0d0c19;
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  max-width: 180px;
+  text-align: center;
+}
+
+.contact-card .icon {
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-card .icon i {
+  font-size: 28px;
+  color: #a259ff;
+}
+
+.contact-card .icon:hover {
+  background-color: #2d2d2d;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-card p {
+  color: #aaa;
+  font-size: 15px;
+}
+
+
+
+
+
 /* MODAL */
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    padding: 20px;
-    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .modal-content {
-    background-color: #151321;
-    padding: 30px;
-    border-radius: 14px;
-    width: 100%;
-    max-width: 1250px;
-    color: #fff;
-    position: relative;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  background-color: #151321;
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 1250px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
-    cursor: pointer;
-    color: #fff;
-    background: none;
-    border: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
 }
 
 .modal-body {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: flex-start;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 /* vídeo (iframe) */
 #modalVideo,
 .modal-body iframe {
-    width: 600px;
-    max-width: 100%;
-    height: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 600px;
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .modal-texto {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.modal-texto > *:not(.botoes-modal) {
-    margin-bottom: 16px;
+.modal-texto>*:not(.botoes-modal) {
+  margin-bottom: 16px;
 }
 
 .modal-texto h2 {
-    color: #c084fc;
-    margin: 0 0 16px;
-    font-size: 26px;
+  color: #c084fc;
+  margin: 0 0 16px;
+  font-size: 26px;
 }
 
 .modal-texto p {
-    margin: 0 0 16px;
-    line-height: 1.6;
-    color: #ddd;
+  margin: 0 0 16px;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 .modal-texto ul {
-    list-style: disc;
-    margin-left: 20px;
-    padding-left: 0;
-    line-height: 1.6;
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  line-height: 1.6;
 }
 
 .data {
-    color: #9d4edd;
-    font-weight: bold;
-    margin-top: 20px;
+  color: #9d4edd;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .botoes-modal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
 }
 
 .botoes-modal button {
-    background-color: #7c3aed;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 
 .botoes-modal button:hover {
-    background-color: #9f5fff;
+  background-color: #9f5fff;
 }
 
-
-
-
+footer{
+  background-color: #6a0dad;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

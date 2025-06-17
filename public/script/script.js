@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("modalData").textContent = card.data || "";
 
         if (card.links) {
-          document.getElementById("btnProjeto").onclick = () => window.open(card.links.projeto, "_blank");
+          document.getElementById("btnCodigo").onclick = () => window.open(card.links.codigo, "_blank");
           document.getElementById("btnRepositorio").onclick = () => window.open(card.links.repositorio, "_blank");
           document.getElementById("btnLinkedin").onclick = () => window.open(card.links.linkedin, "_blank");
         }
