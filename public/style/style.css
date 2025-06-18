@@ -211,32 +211,60 @@ header {
 /* IMG SCROLL */
 .imgscroll-content {
   width: 100%;
-  height: 500px;
-  /* Defina a altura desejada */
+  height: 400px;
   overflow: hidden;
-  /* Oculta o conteúdo que ultrapassa a altura */
-  position: relative;
-  /* Necessário para o posicionamento da imagem */
+  position: relative; /* Necessário para posicionamento absoluto interno */
 }
 
 .imgscroll {
   background-image: url('https://s2-techtudo.glbimg.com/KErJzrMqLSCT96jXUXjr3-l50Js=/0x0:695x391/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/8/o/lh7lziRfejARA0VecHkA/melhores-jogos-roblox-jogar-com-amigos-fighting-simulator.jpg');
   background-size: cover;
-  /* Ou outro valor desejado */
   background-attachment: fixed;
-  /* A imagem não rola */
   background-position: center top;
-  /* Começa no topo */
   width: 100%;
   height: 200%;
-  /* Dobra a altura para permitir a revelação */
   position: absolute;
-  /* Posiciona a imagem dentro do contêiner */
   top: 0;
   left: 0;
   z-index: -1;
-  /* Coloca a imagem atrás do conteúdo */
 }
+
+/* Estilo das logos */
+.logo-container {
+  position: absolute;
+  top: 130px; /* ajuste vertical para alinhar na imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 150px; /* espaçamento entre as logos */
+  z-index: 1;
+}
+
+.logo {
+  width: 160px; /* tamanho das logos */
+  height: auto;
+}
+
+
+/* Alinhamento personalizado (exemplo com base na imagem que você marcou) */
+.logo1 {
+  top: 100px;
+  left: 280px;
+  object-fit: cover;
+}
+
+.logo2 {
+  top: 90px;
+  left: 600px;
+  object-fit: cover;
+}
+
+.logo3 {
+  top: 110px;
+  left: 950px;
+  object-fit: cover;
+}
+
 
 
 
@@ -284,6 +312,7 @@ header {
   font-size: 16px;
   line-height: 1.6;
 }
+
 
 /* CONTACT */
 .contact-section {
@@ -345,8 +374,17 @@ header {
 }
 
 
+/* FOOTER */
 
-
+footer{
+  background-color: #6a0dad;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
 
 /* MODAL */
 
@@ -471,14 +509,4 @@ header {
 
 .botoes-modal button:hover {
   background-color: #9f5fff;
-}
-
-footer{
-  background-color: #6a0dad;
-  width: 100%;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
 }

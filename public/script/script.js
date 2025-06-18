@@ -56,8 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        document.getElementById("modalData").textContent = card.data || "";
-
         if (card.links) {
           document.getElementById("btnCodigo").onclick = () => window.open(card.links.codigo, "_blank");
           document.getElementById("btnRepositorio").onclick = () => window.open(card.links.repositorio, "_blank");
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+//CARDS SAINDO E ENTRANDO
 
 const section = document.querySelector('.projects-section');
   let isVisible = false;
